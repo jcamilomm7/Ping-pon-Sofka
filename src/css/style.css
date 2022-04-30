@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    height:630px ;
+    /* background-color: red; */
+  
+}
+.containerampliar{
+    position: relative;
+    width : 100%;
+  height: 100vh;
+  margin : 0;
+  /* background-color: red; */
+}
+
+.container button{
+    display: block;
+    position: relative;
+    margin-left: 15%;
+    padding: 10px ;
+    cursor: pointer;
+}
+
+.btnampliar{
+    display: block;
+  position: fixed;
+  padding: 10px ;
+  top: 10px;
+ left :10px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+/* 
+#canvas {
+  border: solid 5px white;
+  background: linear-gradient(green, purple);
+  margin-left: 15%;
+
+ */
+
+.lienzo{
+    margin-top: 110px;
+    background-color: rgba(0,150,195,42);
+    width:100% ;
+    height:400px;
+}
+
+.lienzoampliar{
+    width : 100%;
+  margin : 0;
+  height : 100vh;
+  background-color: rgba(0,150,195,42);
+ background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.nota{
+    text-align: center;
+    font-weight: 400px;
+    font-size: 100px;
+    margin-top: 120px;
+}
+
+#vertical{
+    display: none;
+}
+
+@media all and (orientation: portrait){
+
+    .container{
+        display: none;
+    }
+    #vertical{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        background: url(../image/vertical.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
